@@ -5,15 +5,42 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Page Title</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='main.js' defer></script>
         <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="menuContainer">
             <button onclick="unsort()">Unsort</button>
-            <select name="" id="sortingMethod">
-                <option value="1">Lorem Ipsum</option>
+            <select id="sortingMethod" onchange="sort()">
+                <option value="unsorted" disabled>Unsorted</option>
+                <option value="0">Number: Descending</option>
+                <option value="1">Number: Ascending</option>
             </select>
         </div>
-        <script src='main.js'></script>
+        <div class="container" id="itemContainer">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+        </div>
     </body>
 </html>
